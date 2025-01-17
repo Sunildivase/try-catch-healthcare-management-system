@@ -1,7 +1,6 @@
 package com.healthcaremanagement;
 
-import com.healthcaremanagement.service.DoctorService;
-import com.healthcaremanagement.service.PersonService;
+import com.healthcaremanagement.service.*;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -42,22 +41,37 @@ public class TryCatchHealthcareDemo {
                        break;
 
                    case 3:
+                       HospitalService hospitalService = new HospitalService();
+                       hospitalService.createHospital();
+                       hospitalService.displayHospital();
                        System.out.println("hospital created successfully");
                        break;
 
                    case 4:
+                       DepartmentService departmentService= new DepartmentService();
+                       departmentService.createDepartment();
+                       departmentService.displayDepartment();
                        System.out.println("department created successfully");
                        break;
 
                    case 5:
+                       AppointmentService appointmentService = new AppointmentService();
+                       appointmentService.createAppointment();
+                       appointmentService.displayAppointment();
                        System.out.println("appointment created successfully");
                        break;
 
                    case 6:
+                       PrescriptionService prescriptionService = new PrescriptionService();
+                       prescriptionService.createPrescription();
+                       prescriptionService.displayPrescription();
                        System.out.println("prescription created successfully");
                        break;
 
                    case 7:
+                       BillingService billingService = new BillingService();
+                       billingService.createBilling();
+                       billingService.displayBilling();
                        System.out.println("bill generated successfully");
                        break;
 
