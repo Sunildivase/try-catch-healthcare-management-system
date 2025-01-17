@@ -14,7 +14,7 @@ public class PersonService {
         System.out.println(person);
     }
 
-    public void createPerson() {
+    public Person createPerson() {
 
         try {
             System.out.println("please enter id");
@@ -61,6 +61,8 @@ public class PersonService {
             System.out.println("please enter valid inputs");
         }
 
+        Person person = new Person();
+        return person;
 
     }
     public void displayPerson(){
