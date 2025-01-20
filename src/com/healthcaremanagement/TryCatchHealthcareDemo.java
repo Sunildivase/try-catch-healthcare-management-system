@@ -19,6 +19,12 @@ public class TryCatchHealthcareDemo {
            do {
                System.out.println("-----------healthcare-management-system---------------");
                System.out.println("1. create person");
+               System.out.println("2. create doctor");
+               System.out.println("3. create hospital");
+               System.out.println("4. create department");
+               System.out.println("5. create appointment");
+               System.out.println("6. create prescription");
+               System.out.println("7. create billing");
 
                System.out.println("please select the option");
                option = Integer.parseInt(scanner.nextLine());
