@@ -8,9 +8,9 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class DepartmentService {
-    private static Scanner scanner = new Scanner(System.in);
+    private static final Scanner scanner = new Scanner(System.in);
 
-    private Map<Integer, Department> departments = new HashMap<>();
+    private final Map<Integer, Department> departments = new HashMap<>();
 
     void printDepartment(Department department){
         System.out.println(department);
